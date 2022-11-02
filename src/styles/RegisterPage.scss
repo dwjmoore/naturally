@@ -1,0 +1,49 @@
+.register-page-wrapper {
+    display: flex;
+    height: calc(100vh - 2.5rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+
+    .naturally-register {
+        font-family: $cursive;
+        font-size: 1.25em;
+        letter-spacing: 0.05em;
+    }
+    
+    label {
+        font-size: 0.8em;
+    }
+
+    @include input-element();
+
+    .pwd-regex {
+        font-size: 0.5em;
+    }
+
+    .buttons-register {
+        display: flex;
+        justify-content: space-around;
+
+        .button-login-register {
+            @include base-btn-login-register();
+            font-size: 1em;
+    
+            &:hover {
+                font-size: 1.15em;
+                letter-spacing: 0.025em;
+            }
+        }
+    }
+
+    .button-login-register-created {
+        @include base-btn-login-register();
+            font-size: 1em;
+    
+            &:hover {
+                font-size: 1.15em;
+                letter-spacing: 0.025em;
+            }
+    }
+}

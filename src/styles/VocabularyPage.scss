@@ -1,0 +1,13 @@
+.vocabulary-page-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .vocabulary-page-title{
+        font-size: 3.5rem;
+        font-weight: bold;
+        font-family: $cursive;
+        margin-top: 5rem;
+    }
+}

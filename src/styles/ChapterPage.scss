@@ -1,0 +1,19 @@
+.chapter-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .chapter-title {
+        font-family: $cursive;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 0.25rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .chapter-text {
+        width: 50%;
+        font-size: 1.2rem;
+    }
+}

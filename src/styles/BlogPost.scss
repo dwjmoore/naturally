@@ -1,0 +1,45 @@
+.blog-post-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+
+    .blog-post-title {
+        font-family: $cursive;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 0.25rem;
+    }
+
+    .blog-post-image-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .blog-post-image {
+            height: auto;
+            margin-top: 2.5rem;
+        }
+
+        .image-attribution {
+            align-self: flex-start;
+
+            a {
+                text-decoration: none;
+                color: black;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    } 
+    
+    .blog-post-body {
+        margin-top: 2.5rem;
+        width: 50%;
+        font-size: 1.5rem;
+    }
+}

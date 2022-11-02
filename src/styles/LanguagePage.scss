@@ -1,0 +1,32 @@
+.language-page-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+
+    .language-page-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+
+        .language-page-image {
+            width: 260px;
+            height: 260px;
+            border: 1px solid lightgray;
+            transition: all 0.5s ease-in-out;
+            border-radius: 25px;
+
+            &:hover {
+                cursor: pointer;
+                border: 1px solid black;
+                transform: scale(1.08);
+            }
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+}

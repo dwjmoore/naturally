@@ -1,0 +1,70 @@
+.blog-page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4rem;
+    
+    .naturally-blog {
+        font-family: $cursive;
+        font-size: 1.25em;
+        letter-spacing: 0.05em;
+    }
+
+    .admin-create-blog-btn {
+        cursor: pointer;
+        width: 15rem;
+        height: 4rem;
+        padding: 1rem;
+        font-family: $cursive;
+        border: 1px solid transparent;
+        transition: all 0.5s ease-in-out;
+        background-color: white;
+        font-size: 1.5rem;
+
+        &:hover {
+            font-size: 1.65rem;
+            letter-spacing: 0.025em;
+        }
+    }
+}
+
+.blog-posts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .blog-title {
+        cursor: pointer;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        margin-top: 2.5rem;
+        margin-bottom: -1.5rem;
+        height: 6rem;
+        font-family: $cursive;
+        border: 1px solid transparent;
+        transition: all 0.5s ease-in-out;
+        background-color: white;
+        font-size: 2.75rem;
+        font-weight: 700;
+        letter-spacing: 0.25rem;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            font-size: 3rem;
+            letter-spacing: 0.275rem;
+        }
+    }
+    
+    .blog-body {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 50%;
+    }
+}
+
+

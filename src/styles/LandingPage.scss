@@ -1,0 +1,46 @@
+.landingpage-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4%;
+    font-size: 2rem;
+
+    .welcome-landing {
+        font-size: 0.85em;
+    }
+
+    .naturally-landing {
+        font-family: $cursive;
+        font-size: 2.5em;
+        letter-spacing: 0.05em;
+        margin-top: 0.5%;
+
+    }
+
+    .subtext-landing {
+        font-size: 0.85em;
+
+        .natural-method-landing {
+            font-family: $cursive;
+            font-size: 1.25em;
+        }
+    }
+
+    .buttons-landing {
+        display: flex;
+        column-gap: 10px;
+    
+        .button-login-register {
+            @include base-btn-login-register();
+            font-size: 0.85em;
+    
+            &:hover {
+                font-size: 1em;
+                letter-spacing: 0.025em;
+            }
+        }
+    }
+}
+

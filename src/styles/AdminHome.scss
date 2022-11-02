@@ -1,0 +1,54 @@
+.admin-home-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 12rem);
+
+    .admin-home-title {
+        font-size: 2rem;
+    }
+
+    .admin-home-messages-wrapper {
+        display: flex;
+        column-gap: 1rem;
+        justify-content: space-between;
+
+        button{
+            cursor: pointer;
+            font-family: $cursive;
+            border: 1px solid transparent;
+            transition: all 0.5s ease-in-out;
+            background-color: white;
+            font-size: 1.25rem;
+            width: 6rem;
+
+            &:hover {
+                font-size: 1.40rem;
+                letter-spacing: 0.025em;
+            }
+        }
+    }
+
+    .admin-home-blog-wrapper {
+        display: flex;
+        column-gap: 1rem;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        button{
+            cursor: pointer;
+            font-family: $cursive;
+            border: 1px solid transparent;
+            transition: all 0.5s ease-in-out;
+            background-color: white;
+            font-size: 1.25rem;
+            width: 6rem;
+
+            &:hover {
+                font-size: 1.40rem;
+                letter-spacing: 0.025em;
+            }
+        }
+    }
+}

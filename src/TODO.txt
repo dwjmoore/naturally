@@ -1,0 +1,16 @@
+----Blog Page----
+---Create Blog Post---
+---Navbar styling---
+----Admin login----
+Admin homepage
+Edit Blog
+Retreive contact messages
+French Course
+    -- Textbook
+    -- Exercises
+    -- Vocabulary
+Italian Course
+    -- Textbook
+    -- Exercises
+    -- Vocabulary
+Text-to-Speech Program
