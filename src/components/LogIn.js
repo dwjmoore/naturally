@@ -19,7 +19,7 @@ export default function LogIn() {
 
     const redirect = useDashboardRedirect();
 
-    useEffect (() => {
+    useEffect(() => {
         redirect();
     }, [redirect]);
 
@@ -31,15 +31,15 @@ export default function LogIn() {
                 "/login",
                 user,
                 {
-                    headers: { 'Content-Type' : 'application/json' },
+                    headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
                 }
             )
             .then(() => {
                 setLoggedInStatus("LOGGED_IN");
                 setUser({
-                    email:'',
-                    password:''
+                    email: '',
+                    password: ''
                 });
                 navigate(from, { replace: true });
             })

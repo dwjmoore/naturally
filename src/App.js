@@ -30,7 +30,7 @@ export default function App() {
             <Route index element={<LandingPage />} />
 
             <Route path="/" element={<Navbar />} >
-                
+
                 <Route path="register" element={<Register />} />
                 <Route path="login" element={<LogIn />} />
                 <Route path="blog" element={<Blog />} />
@@ -49,7 +49,7 @@ export default function App() {
                     <Route path="french/exercises" element={<FrenchExercises />} />
                     <Route path="french/exercises/:id" element={<FrenchExercisesChapter />} />
                 </Route>
-            
+
             </Route>
 
             <Route element={<AdminAuth />}>

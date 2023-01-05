@@ -5,7 +5,7 @@ import useDashboardRedirect from "../hooks/useDashboardRedirect";
 export default function LandingPage() {
     const redirect = useDashboardRedirect();
 
-    useEffect (() => {
+    useEffect(() => {
         redirect();
     }, [redirect]);
 

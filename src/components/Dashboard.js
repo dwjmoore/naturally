@@ -22,44 +22,44 @@ export default function Dashboard() {
 
     return (
         <>
-            { (isLoading) ? (
+            {(isLoading) ? (
                 <section className="loading">
                     {<FontAwesomeIcon icon={faSpinner} className="fa-spin" />}
                 </section>
-                ) : (
-                    language === "NO_LANGUAGE"
-                ) ? (
-                    <section className="dashboard-wrapper">
-                        <div>Welcome to your Naturally dashboard!</div>
-                        <div>Select the language you would like to learn from the dropdown menu.</div>
-                    </section>
-                ) : (
-                    language === "French"
-                ) ? (
-                    <section className="dashboard-wrapper">
-                        <French />
-                    </section>
-                ) : (
-                    language === "German"
-                ) ? (
-                    <section className="dashboard-wrapper">
-                        <German />
-                    </section>
-                ) : (
-                    language === "Italian"
-                ) ? (
-                    <section className="dashboard-wrapper">
-                        <Italian />
-                    </section>
-                ) : (
-                    language === "Spanish"
-                ) ? (
-                    <section className="dashboard-wrapper">
-                        <Spanish />
-                    </section>
-                ) : (
-                    null
-                )
+            ) : (
+                language === "NO_LANGUAGE"
+            ) ? (
+                <section className="dashboard-wrapper">
+                    <div>Welcome to your Naturally dashboard!</div>
+                    <div>Select the language you would like to learn from the dropdown menu.</div>
+                </section>
+            ) : (
+                language === "French"
+            ) ? (
+                <section className="dashboard-wrapper">
+                    <French />
+                </section>
+            ) : (
+                language === "German"
+            ) ? (
+                <section className="dashboard-wrapper">
+                    <German />
+                </section>
+            ) : (
+                language === "Italian"
+            ) ? (
+                <section className="dashboard-wrapper">
+                    <Italian />
+                </section>
+            ) : (
+                language === "Spanish"
+            ) ? (
+                <section className="dashboard-wrapper">
+                    <Spanish />
+                </section>
+            ) : (
+                null
+            )
             }
         </>
     );

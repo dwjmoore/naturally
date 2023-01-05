@@ -4,7 +4,7 @@ import useGlobalState from "../hooks/useGlobalState";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
-export default function Dropdown () {
+export default function Dropdown() {
     const [open, setOpen] = useState(false);
     const { setLanguage } = useGlobalState();
 
@@ -21,10 +21,10 @@ export default function Dropdown () {
             .put(
                 "/set-language",
                 {
-                    "language" : language
+                    "language": language
                 },
                 {
-                    headers: { 'Content-Type' : 'application/json' },
+                    headers: { 'Content-Type': 'application/json' },
                     withCredentials: true
                 }
             )
@@ -39,7 +39,7 @@ export default function Dropdown () {
         <div>
             <div className="dropdown">
                 <button onClick={handleOpen}>
-                {<FontAwesomeIcon icon={faCaretDown} className={!open ? "fa-rotate-270" : "fa-rotate-0"}/>} Language
+                    {<FontAwesomeIcon icon={faCaretDown} className={!open ? "fa-rotate-270" : "fa-rotate-0"} />} Language
                 </button>
             </div>
             {open ? (
